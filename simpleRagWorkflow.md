@@ -27,7 +27,7 @@ The agent chat enables interaction with a user through a chat window in n8n, but
 ### Architecture
 
 ![Agent Chat Flow](./agentChat.png)
-The agent workflow is triggered when a message is sent through the chat. I chose GPT-4.0 Mini for both chatting and evaluating the retriever's responses. I connected this retriever, named "Answer Questions with a Vector Store," to the same database we used earlier, enabling the agent to respond to the user. Finally, a simple memory mechanism allows the LLM to access past messages, ensuring coherence throughout the conversation.
+The agent workflow is triggered when a message is sent through the chat. I chose GPT-4.0 Mini for both chatting and evaluating the retriever's responses. I connected this retriever, named "Answer Questions with a Vector Store," to the same database we used earlier, enabling the agent to respond to the user using the context stored in the vector database. Finally, a simple memory allows the LLM to access past messages, ensuring coherence throughout the conversation.
 
 ### 💬 Example Interaction
 
